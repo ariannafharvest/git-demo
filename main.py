@@ -8,8 +8,15 @@ def countdown(seconds):
     time.sleep(1)
   print("LAUNCH!")
 
+def is_successful(success):
+  if success:
+    print("Congratulations! Launch was a success!")
+  else:
+    print("Oh no! Something went wrong, launch failed!")
+
 def main():
   countdown(3)
+  is_successful(True)
 
 if __name__ == "__main__":
   main()
